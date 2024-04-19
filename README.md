@@ -290,11 +290,11 @@ The outer most scope of a program is the _global scope_ and all block and functi
 ```js
 const name = 'Danny' // this variable is being declared in the "global scope"
 {
-  const name = 'Caleb'  // this variable is being declared in a "block scope"
+  const name = 'Frank'  // this variable is being declared in a "block scope"
 }
 console.log(name) // prints 'Danny' because this line is being run in the global scope and NOT the block scope of the program.
 
-// name = 'Caleb' is limited in scope to the block in which it is defined
+// name = 'Frank' is limited in scope to the block in which it is defined
 ```
 <!-- end code block -->
 
