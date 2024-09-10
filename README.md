@@ -1,4 +1,4 @@
-### SEBR0429
+### SEBR 0916
 
 # JavaScript Functions
 
@@ -116,46 +116,7 @@ Our goal is to craft our programs in as few lines of code as possible, while sti
 
 ---
 
-## Arrow Function Expressions
-
-Now we know what functions are and why we use them. But how do we create them?
-
-As you saw in our movie example, just as we do with a variable, we must define a function before we call or "use" it.
-
-In JavaScript, functions can be defined in several ways. We will be focusing on using **arrow function expressions** since that is the modern way of writing them.
-
-#### Function Expressions - Overview
-
-Let's take a look at the different parts of the arrow function:
-
-```js
-const pickADescriptiveName = () => {
-  // code block
-}
-// 'pickADescriptiveName' is the function name
-// the parenthesis and arrow are short hand for the declaration of a function . . . also known as an arrow function
-// parentheses are needed and can have optional, multiple parameters, or default parameters
-```
-
-Have you ever tried to move forward to the next page of an online form, only to be greeted by an alert that says "Please fill out all the required fields"?
-
-This kind of code can be placed in a function and this function can be called anytime the user hasn't filled out a field on any form on the site. Let's code for this fake popup alert using a function expression:
-
-```js
-const errorAlert = () => {
-  alert('Please be sure to fill out all required fields')
-}
-```
-
-Let's take a look at the function in more detail:
-
-1.  The first line begins by declaring a variable called `errorAlert`. This is the name that we can then use to call that function.
-2.  Next, you have a list of parameters surrounded by parentheses.  In very specific cases the parenthesis are optional, however, we suggest that you include the parentheses as you are gaining familiarity with functions.
-3.  The statements inside the function will run every time the function is called. The function body must always be wrapped in curly braces `{ }`, even when it consists of only a single statement. **NOTE** that there is an exception to this rule as well, however, we will still encourage you to always use curly braces as you are getting comfortable with functions.
-
 #### Naming Conventions
-
-Now that we've learned about arrow functions, let's discuss naming conventions.
 
 You may have noticed how we capitalize names in JavaScript using the camelCase style.
 
@@ -200,7 +161,7 @@ Let's write a function that calculates the area of a rectangle.
 We need to provide our `calculateArea` function with a width and a length so we won't need to create a separate function every time we want to measure the dimensions of a new room.
 
 ```js
-const calculateArea = (width, length) => {
+function calculateArea (width, length) {
   console.log(width * length)
 }
 
@@ -220,7 +181,7 @@ e.g., (parameter1, parameter2, parameter3, parameter4, etc.)
 Here is an example of a function with four strings as parameters:
 
 ```js
-const greetUser = (firstName, lastName, year, city) => {
+function greetUser (firstName, lastName, year, city) {
   console.log(`Hello ${firstName} ${lastName}, I was born in ${year} and I'm from ${city}.`)
 }
 ```
@@ -236,6 +197,45 @@ greetUser('Bruce', 'Wayne', 1939, 'Gotham')
 > What would happen if we didn't provide all of the parameters?
 
 The code in a function will not run when the function is defined. The code will only run when the function is called.
+
+
+
+## Arrow Function Expressions
+
+Now we know what functions are and why we use them. But how do we create them?
+
+As you saw in our movie example, just as we do with a variable, we must define a function before we call or "use" it.
+
+In JavaScript, functions can be defined in several ways. We will be focusing on using **arrow function expressions** since that is the modern way of writing them.
+
+#### Function Expressions - Overview
+
+Let's take a look at the different parts of the arrow function:
+
+```js
+const pickADescriptiveName = () => {
+  // code block
+}
+// 'pickADescriptiveName' is the function name
+// the parenthesis and arrow are short hand for the declaration of a function . . . also known as an arrow function
+// parentheses are needed and can have optional, multiple parameters, or default parameters
+```
+
+Have you ever tried to move forward to the next page of an online form, only to be greeted by an alert that says "Please fill out all the required fields"?
+
+This kind of code can be placed in a function and this function can be called anytime the user hasn't filled out a field on any form on the site. Let's code for this fake popup alert using a function expression:
+
+```js
+const errorAlert = () => {
+  alert('Please be sure to fill out all required fields')
+}
+```
+
+Let's take a look at the function in more detail:
+
+1.  The first line begins by declaring a variable called `errorAlert`. This is the name that we can then use to call that function.
+2.  Next, you have a list of parameters surrounded by parentheses.  In very specific cases the parenthesis are optional, however, we suggest that you include the parentheses as you are gaining familiarity with functions.
+3.  The statements inside the function will run every time the function is called. The function body must always be wrapped in curly braces `{ }`, even when it consists of only a single statement. **NOTE** that there is an exception to this rule as well, however, we will still encourage you to always use curly braces as you are getting comfortable with functions.
 
 
 
