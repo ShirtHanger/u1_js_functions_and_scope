@@ -1,0 +1,1 @@
+// You can use return statements inside functions to push a local variable into the parent scope
